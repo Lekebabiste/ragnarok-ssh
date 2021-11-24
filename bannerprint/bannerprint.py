@@ -10,4 +10,4 @@ def print_file(filename,color,style=Style.NORMAL):
 
 def print_banner():
     print_file('bannerprint/banner.txt',Fore.RED,Style.BRIGHT)
-    #print_file('banner-text.txt',Fore.WHITE)#(You can uncoment this line if you want)
+    #print_file('banner-text.txt',Fore.WHITE) You can uncoment this line
