@@ -56,8 +56,15 @@ while True:
         print("*****************************************************************************************************************\n")
         Wordlist_path = input("Set the wordlist path (Exemple : /home/lekebabiste/Documents/worldlist.txt) > ")
     elif choice == 5 :
-        bruteforce_script.bruteforce(Wordlist_path,Host,Port,Username)
-        input("Enter any key to continue")
+        try:
+            bruteforce_script.bruteforce(Wordlist_path,Host,Port,Username)
+        except FileNotFoundError:
+            print(f"{Fore.RED}[-] The path of the file doesn't exist or invalide. Please enter a correct wordlist path.",Style.RESET_ALL)
+        wquit = input("Press Y to quit")
+        if wquit == "Y" or "y" or "Yes":
+            quit()
+        else:
+            pass
     elif choice == 6:
         os.system('clear')
         print("Host : ",Host,"\nPort : ",Port,"\nWordlist path : ",Wordlist_path,"\nUsername : ",Username)
