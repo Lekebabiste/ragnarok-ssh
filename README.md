@@ -8,16 +8,27 @@ A tool for ssh bruteforce
 ## Ubuntu/debian 
 ```
 # Update the repos
+
 sudo apt update
+
 # Install git if is not already installed
+
 sudo apt install git
+
 # Clone the repo
+
 git clone https://github.com/Lekebabiste/ragnarok-ssh.git
+
 # Moving to ragnarok-ssh directory
+
 cd ragnarok-ssh
+
 # Do as executable the install-file and execute
+
 chmod +x debian-install.sh && ./debian-install.sh
+
 # Lanch Ragnarok-shh
+
 ./ragnarok-ssh.py
 ```
 
