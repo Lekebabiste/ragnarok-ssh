@@ -2,7 +2,7 @@ from os import name
 import paramiko
 from colorama import Fore, Style
 import socket
-def bruteforce(wordlist_path="wordlist.txt",host="localhost",port=22,username="ivan"):
+def bruteforce(wordlist_path="wordlist.txt",host="localhost",port=22,username="root"):
     file = open(wordlist_path, "r")
     line_count = 0
     for line in file:
